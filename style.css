@@ -1,0 +1,76 @@
+@font-face {
+  font-family: monofonto;
+  src: url(monofonto.ttf);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: monofonto, Calibri, sans-serif;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+#app section {
+  width: 100%;
+  height: 100%;
+}
+
+#app section .container {
+  width: 1024px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+#slideshow {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("filter.png"), url("pics/ff_1.jpg");
+  font-size: 24pt;
+  color: white;
+}
+
+#slideshow .gametitle {
+  margin-right: 20px;
+  font-size: 96pt;
+  font-weight: bold;
+  line-height: 86pt;
+  color: #ffbd00;
+}
+
+#slideshow .gametitle .subtitle {
+  text-align: right;
+  font-size: 52pt;
+  line-height: 46pt;
+  padding-right: 4px;
+}
+
+#slideshow .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#slideshow .container div:not(.gametitle) {
+  text-shadow: -2px -2px 0 #000,   2px -2px 0 #000, -2px  2px 0 #000, 2px  2px 0 #000;
+}
+/*# sourceMappingURL=style.css.map */
