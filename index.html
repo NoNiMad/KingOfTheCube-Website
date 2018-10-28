@@ -1,101 +1,117 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" media="all" type="text/css" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-  <title>King Of The Cube - AGI18</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" media="all" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <title>King Of The Cube - AGI18</title>
 </head>
 
 <body>
-  <div id="app">
-    <section id="slideshow">
-      <div class="container">
-        <div class="gametitle">
-          KING
-          <div class="subtitle">OF<br>THE</div>
-          CUBE
-        </div>
-        <div>
-          A multiplayer augmented-reality game
-          <br>
-          Created for the AGI18 at KTH
-        </div>
-      </div>
-    </section>
-    <section>
-        <div class="container">
-            King of the Cube gives a twist to the familiar Donkey Kong-esque games of yore , and brings it to your world in AR! All you have to do is to put the cube on your table in the living room, call some brave souls over and see which one of you is cut out to be the true king of the cube. Now you have a good reason to bump into your friends!
-            <br /><br />
-            This project was developed from September to early November 2018 as part of the DH2413 course. It focuses on merging the two worlds of advanced graphics and interaction.
-        </div>
-    </section>
-    <section id="gallery">
-        <div class="section-title">
-            IMAGE GALLERY
-        </div>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span> <!-- The Close Button -->
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
-
-        <!-- I should do this dynamically in js instead... -->
-        <div class="responsive">
-            <div class="gallery">
-                <img id="myImg" src="pics/kotc1.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+    <div id="app">
+        <section id="slideshow">
+            <div class="container">
+                <div class="gametitle">
+                    KING
+                    <div class="subtitle">OF<br>THE</div>
+                    CUBE
+                </div>
+                <div>
+                    A multiplayer augmented-reality game
+                    <br>
+                    Created for the AGI18 at KTH
+                </div>
             </div>
-        </div>
-
-        <div class="responsive">
-            <div class="gallery">
-                <img src="pics/kotc2.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+        </section>
+        <section>
+            <div class="container">
+                King of the Cube gives a twist to the familiar Donkey Kong-esque games of yore , and brings it to your world in AR! All you have to do is to put the cube on your table in the living room, call some brave souls over and see which one of you is cut out to be the true king of the cube. Now you have a good reason to bump into your friends!
+                <br /><br />
+                This project was developed from September to early November 2018 as part of the DH2413 course. It focuses on merging the two worlds of advanced graphics and interaction.
             </div>
-        </div>
-
-        <div class="responsive">
-            <div class="gallery">
-                <img src="pics/kotc3.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+        </section>
+        <section id="gallery">
+            <div class="section-title">
+                IMAGE GALLERY
             </div>
-        </div>
-
-        <div class="responsive">
-            <div class="gallery">
-                <img src="pics/kotc4.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span> <!-- The Close Button -->
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
             </div>
-        </div>
 
-        <div class="responsive">
-            <div class="gallery">
-                <img src="pics/kotc5.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+            <!-- I should do this dynamically in js instead... -->
+            <div class="responsive">
+                <div class="gallery">
+                    <img id="myImg" src="pics/kotc1.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+                </div>
             </div>
-        </div>
 
-        <div class="responsive">
-            <div class="gallery">
-                <img src="pics/kotc6.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="pics/kotc2.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+                </div>
             </div>
-        </div>
 
-        <div class="responsive">
-            <div class="gallery">
-                <img src="pics/kotc7.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="pics/kotc3.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+                </div>
             </div>
-        </div>
 
-        <div class="responsive">
-            <div class="gallery">
-                <img src="pics/kotc8.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="pics/kotc4.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+                </div>
             </div>
-        </div>
 
-        <div class="clearfix"></div>
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="pics/kotc5.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+                </div>
+            </div>
 
-    </section>
-  </div>
-  <script src="script.js"></script>
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="pics/kotc6.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="pics/kotc7.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <img src="pics/kotc8.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-32">
+            <div id="back-top">
+                <a href="#top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            </div>
+            <div class="w3-xlarge w3-section">
+                <a href="https://github.com/elBjarnacho/KingOfTheCube"><i class="fa fa-github w3-hover-opacity"></i></a>
+            </div>
+            <p>&copy; King of the Cube 2018</p>
+        </footer>
+
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

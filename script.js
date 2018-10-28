@@ -5,6 +5,7 @@ new Vue({
   }
 })
 
+/////////////////////////////////////////////////////////////
 // GALLERY
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -26,3 +27,21 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
     modal.style.display = "none";
 }
+
+////////////////////////////////////////////////////////////////
+// FOOTER
+// Add a back to top animation to the button in the footer
+$(document).ready(function () {
+
+    // fade in #back-top
+    $(function () {
+        // scroll body to 0px on click
+        $('#back-top a').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    });
+
+});
