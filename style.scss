@@ -18,7 +18,8 @@ html, body {
     width: 100%;
 
     .container {
-      width: 1024px;
+      //width: 1024px;
+      width: 100%;
       margin: auto;
       padding: 20px 0;
     }
@@ -33,48 +34,46 @@ html, body {
 }
 
 #slideshow {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: url('filter.png'), url('pics/ff_1.jpg');
-
-  font-size: 24pt;
-  color: white;
-
-  section {
-    width: 100%;
     height: 100%;
-    } 
-
-  .gametitle {
-    margin-right: 20px;
-    font-size: 96pt;
-    font-weight: bold;
-    line-height: 86pt;
-    color: #ffbd00;
-
-    .subtitle {
-      text-align: right;
-      font-size: 52pt;
-      line-height: 46pt;
-      padding-right: 4px;
-    }
-  }
-
-  .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background: url('filter.png'), url('pics/ff_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
 
-    div:not(.gametitle) {
-      text-shadow:
-       -2px -2px 0 #000,  
-        2px -2px 0 #000,
-       -2px  2px 0 #000,
-        2px  2px 0 #000;
+    font-size: 24pt;
+    color: white;
+
+    section {
+        width: 100%;
+        height: 100%;
     }
-  }
+
+    .gametitle {
+        margin-right: 20px;
+        font-size: 96pt;
+        font-weight: bold;
+        line-height: 86pt;
+        color: #ffbd00;
+
+        .subtitle {
+            text-align: right;
+            font-size: 52pt;
+            line-height: 46pt;
+            padding-right: 4px;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div:not(.gametitle) {
+            text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+        }
+    }
 }
 
 div {
@@ -102,17 +101,50 @@ div {
     width: 24.5%;
 }
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 900px) {
     .responsive {
         width: 32.2%;
         margin: 6px 0;
     }
+
+    #slideshow {
+        font-size: 18pt;
+
+        .gametitle {
+            margin-right: 20px;
+            font-size: 52pt;
+            line-height: 52pt;
+
+            .subtitle {
+                font-size: 36pt;
+                line-height: 32pt;
+                padding-right: 4px;
+            }
+        }
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {
     .responsive {
         width: 48%;
         margin: 6px 0;
+    }
+
+    #slideshow {
+        font-size: 12pt;
+
+        .gametitle {
+            margin-right: 20px;
+            font-size: 52pt;
+            line-height: 52pt;
+
+            .subtitle {
+                font-size: 36pt;
+                line-height: 32pt;
+                padding-right: 4px;
+            }
+        }
     }
 }
 

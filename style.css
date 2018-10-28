@@ -17,7 +17,7 @@ html, body {
   width: 100%;
 }
 #app section .container {
-  width: 1024px;
+  width: 100%;
   margin: auto;
   padding: 20px 0;
 }
@@ -34,6 +34,8 @@ html, body {
   flex-direction: column;
   align-items: center;
   background: url("filter.png"), url("pics/ff_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 24pt;
   color: white;
 }
@@ -80,16 +82,44 @@ div .gallery img {
   width: 24.5%;
 }
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 900px) {
   .responsive {
     width: 32.2%;
     margin: 6px 0;
+  }
+
+  #slideshow {
+    font-size: 18pt;
+  }
+  #slideshow .gametitle {
+    margin-right: 20px;
+    font-size: 52pt;
+    line-height: 52pt;
+  }
+  #slideshow .gametitle .subtitle {
+    font-size: 36pt;
+    line-height: 32pt;
+    padding-right: 4px;
   }
 }
 @media only screen and (max-width: 600px) {
   .responsive {
     width: 48%;
     margin: 6px 0;
+  }
+
+  #slideshow {
+    font-size: 12pt;
+  }
+  #slideshow .gametitle {
+    margin-right: 20px;
+    font-size: 52pt;
+    line-height: 52pt;
+  }
+  #slideshow .gametitle .subtitle {
+    font-size: 36pt;
+    line-height: 32pt;
+    padding-right: 4px;
   }
 }
 @media only screen and (max-width: 500px) {
