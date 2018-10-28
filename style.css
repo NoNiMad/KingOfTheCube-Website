@@ -2,7 +2,6 @@
   font-family: monofonto;
   src: url(monofonto.ttf);
 }
-
 html, body {
   margin: 0;
   padding: 0;
@@ -14,35 +13,34 @@ html, body {
   width: 100%;
   height: 100%;
 }
-
 #app section {
   width: 100%;
-  height: 100%;
 }
-
 #app section .container {
   width: 1024px;
   margin: auto;
   padding: 20px 0;
 }
+#app section .section-title {
+  background-color: lightslategrey;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin-bottom: 20px;
+}
 
 #slideshow {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background: url("filter.png"), url("pics/ff_1.jpg");
   font-size: 24pt;
   color: white;
 }
-
+#slideshow section {
+  width: 100%;
+  height: 100%;
+}
 #slideshow .gametitle {
   margin-right: 20px;
   font-size: 96pt;
@@ -50,27 +48,127 @@ html, body {
   line-height: 86pt;
   color: #ffbd00;
 }
-
 #slideshow .gametitle .subtitle {
   text-align: right;
   font-size: 52pt;
   line-height: 46pt;
   padding-right: 4px;
 }
-
 #slideshow .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+#slideshow .container div:not(.gametitle) {
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
-#slideshow .container div:not(.gametitle) {
-  text-shadow: -2px -2px 0 #000,   2px -2px 0 #000, -2px  2px 0 #000, 2px  2px 0 #000;
+div .gallery {
+  cursor: pointer;
 }
+div .gallery :hover {
+  opacity: 0.7;
+}
+div .gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.responsive {
+  padding: 0 2px;
+  float: left;
+  width: 24.5%;
+}
+
+@media only screen and (max-width: 815px) {
+  .responsive {
+    width: 32.2%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .responsive {
+    width: 48%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
