@@ -26,6 +26,7 @@ html, body {
   text-align: center;
   padding: 10px 0 10px 0;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 #slideshow {
@@ -65,6 +66,10 @@ html, body {
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
+#main-content {
+  padding: 20px 80px 20px 80px;
+}
+
 div .gallery {
   cursor: pointer;
 }
@@ -74,6 +79,28 @@ div .gallery :hover {
 div .gallery img {
   width: 100%;
   height: auto;
+}
+div .team img {
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+div .team p {
+  text-align: center;
+  margin-bottom: 2px;
+}
+div .team .email {
+  color: darkslategrey;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+#team .responsive {
+  padding: 0 2px;
+  float: left;
+  width: 32.5%;
 }
 
 .responsive {
