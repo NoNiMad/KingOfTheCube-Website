@@ -49,52 +49,9 @@
                 <div id="caption"></div>
             </div>
 
-            <!-- I should do this dynamically in js instead... -->
-            <div class="responsive">
+            <div class="responsive" v-for="i in [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3]">
                 <div class="gallery">
-                    <img id="myImg" src="pics/kotc1.JPG" alt="" width="400" height="300" onclick="showImg(this)">
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <img src="pics/kotc2.JPG" alt="" width="400" height="300" onclick="showImg(this)">
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <img src="pics/kotc3.JPG" alt="" width="400" height="300" onclick="showImg(this)">
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <img src="pics/kotc4.JPG" alt="" width="400" height="300" onclick="showImg(this)">
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <img src="pics/kotc5.JPG" alt="" width="400" height="300" onclick="showImg(this)">
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <img src="pics/kotc6.JPG" alt="" width="400" height="300" onclick="showImg(this)">
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <img src="pics/kotc7.JPG" alt="" width="400" height="300" onclick="showImg(this)">
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <img src="pics/kotc8.JPG" alt="" width="400" height="300" onclick="showImg(this)">
+                    <img :src="`pics/kotc${i}.JPG`" alt="" width="400" height="300" onclick="showImg(this)">
                 </div>
             </div>
 
@@ -108,51 +65,11 @@
             </div>
 
             <div class="container">
-                <div class="responsive">
+                <div class="responsive" v-for="user in users">
                     <div class="team">
-                        <img src="pics/user.png" alt="" width="400" height="300" onclick="showImg(this)">
-                        <p>Sonia Camacho</p>
-                        <p class="email">soniach@kth.se</p>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="team">
-                        <img src="pics/user.png" alt="" width="400" height="300" onclick="showImg(this)">
-                        <p>Julien Rouault</p>
-                        <p class="email">rouault@kth.se</p>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="team">
-                        <img src="pics/user.png" alt="" width="400" height="300" onclick="showImg(this)">
-                        <p>Pooria Ghavamian</p>
-                        <p class="email">pooriag@kth.se</p>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="team">
-                        <img src="pics/user.png" alt="" width="400" height="300" onclick="showImg(this)">
-                        <p>Bjarni Gudmundsson</p>
-                        <p class="email">brgud@kth.se</p>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="team">
-                        <img src="pics/user.png" alt="" width="400" height="300" onclick="showImg(this)">
-                        <p>Rafa Lucena</p>
-                        <p class="email">rafaella@kth.se</p>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="team">
-                        <img src="pics/user.png" alt="" width="400" height="300" onclick="showImg(this)">
-                        <p>Henrique Furtado</p>
-                        <p class="email">hfm@kth.se</p>
+                        <img :src="`pics/${user.pic}`" alt="" width="400" height="300" onclick="showImg(this)">
+                        <p>{{ user.name }}</p>
+                        <p class="email"><a :href="`mailto:${user.email}`">{{ user.email }}</a></p>
                     </div>
                 </div>
 

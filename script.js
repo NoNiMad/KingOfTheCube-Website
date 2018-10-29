@@ -1,7 +1,31 @@
 new Vue({
   el: '#app',
   data: {
-    
+    users: [{
+      name: "Sonia Camacho",
+      email: "soniach@kth.se",
+      pic: "user.png"
+    }, {
+      name: "Julien Rouault",
+      email: "rouault@kth.se",
+      pic: "user.png"
+    }, {
+      name: "Pooria Ghavamian",
+      email: "pooriag@kth.se",
+      pic: "user.png"
+    }, {
+      name: "Bjarni Gudmundsson",
+      email: "brgud@kth.se",
+      pic: "user.png"
+    }, {
+      name: "Rafa Lucena",
+      email: "rafaella@kth.se",
+      pic: "user.png"
+    }, {
+      name: "Henrique Furtado",
+      email: "hfm@kth.se",
+      pic: "user.png"
+    }]
   }
 })
 
