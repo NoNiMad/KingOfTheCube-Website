@@ -78,6 +78,18 @@ html, body {
 
 #main-content{
     padding: 20px 80px 20px 80px;
+
+    .centered{
+        padding: 30px;
+        margin: auto;
+
+        img{
+            margin: auto;
+            width: 60%;
+            height: auto;
+            display: block;
+        }
+    }
 }
 
 div {
@@ -131,12 +143,12 @@ div {
 .responsive {
     padding: 0 2px;
     float: left;
-    width: 24.5%;
+    width: 24.9%;
 }
 
 @media only screen and (max-width: 900px) {
     .responsive {
-        width: 32.2%;
+        width: 33.1%;
         margin: 6px 0;
     }
 
@@ -160,7 +172,7 @@ div {
 
 @media only screen and (max-width: 600px) {
     .responsive {
-        width: 48%;
+        width: 49.8%;
         margin: 6px 0;
     }
 
