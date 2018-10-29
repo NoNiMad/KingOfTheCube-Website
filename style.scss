@@ -57,7 +57,7 @@ html, body {
         line-height: 86pt;
         color: #ffbd00;
 
-        .subtitle {
+        div {
             text-align: right;
             font-size: 52pt;
             line-height: 46pt;
@@ -70,7 +70,7 @@ html, body {
         align-items: center;
         justify-content: center;
 
-        div:not(.gametitle) {
+        .outlined {
             text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
         }
     }
