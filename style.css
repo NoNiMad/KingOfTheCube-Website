@@ -38,7 +38,7 @@ html, body {
 }
 
 #app :not(#slideshow) .container {
-  background-color: rgba(200, 200, 200, 0.8);
+  background-color: #c8c8c8;
 }
 
 #background {
@@ -151,6 +151,7 @@ html, body {
 #team .team .user {
   width: 33%;
   text-align: center;
+  font-weight: bold;
   margin-bottom: 30px;
 }
 
@@ -168,6 +169,14 @@ html, body {
 
 #team .team .user .email {
   color: darkslategrey;
+  font-weight: normal;
+}
+
+#team .team .user .list {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
 }
 
 @media only screen and (max-width: 900px) {

@@ -48,12 +48,28 @@
       </section>
       <section>
         <div class="container">
+          <div class="section-title">
+              TECHNOLOGIES USED
+          </div>
+          <div v-html="technologies" class="text-content"></div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
             <div class="section-title">
                 CHALLENGES &amp OBSTACLES 
             </div>
             <div v-html="challenges" class="text-content"></div>
         </div>
       </section>
+      <section>
+        <div class="container">
+          <div class="section-title">
+              RELATED WORK
+          </div>
+          <div v-html="relatedWork" class="text-content"></div>
+        </div>
+        </section>
       <section>
         <div class="container">
           <div class="section-title">
@@ -95,6 +111,10 @@
                 {{ user.name }}
                 <br>
                 <a class="email" :href="`mailto:${user.email}`">{{ user.email }}</a>
+                
+                  <p v-for="contribution in user.contributions" class="list">
+                    {{contribution}}
+                  </p>
               </div>
             </div>
           </div>

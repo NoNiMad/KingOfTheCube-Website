@@ -36,7 +36,7 @@ html, body {
     }
   }
 
-  :not(#slideshow) .container { background-color: rgba(200, 200, 200, 0.8); }
+  :not(#slideshow) .container { background-color: rgba(200, 200, 200, 1); }
 }
 
 #background {
@@ -130,6 +130,7 @@ html, body {
     .user {
       width: 33%;
       text-align: center;
+      font-weight: bold;
       margin-bottom: 30px;
 
       img {
@@ -146,6 +147,14 @@ html, body {
 
       .email {
         color: darkslategrey;
+        font-weight: normal;
+      }
+
+      .list {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: normal;
       }
     }
   }

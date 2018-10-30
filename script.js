@@ -8,36 +8,50 @@ Other lessons we were forced to learn the hard way, for example we could have do
 <br><br>
 Finally we realized how important it is to stay organized, especially when working together in a group. Regularly we would sit down and try to identify what were our most urgent tasks at the moment, which enabled us to work in a parallel manner and increased our productivity as a group. However, this also had some negative side effects, mainly in the form of code maintenance and integration of features. We could have been better at proactively defining various interfaces to minimize the negative impact of people working in parallel. `
 
+const relatedWork = `We were inspired by some of the classic 2D platforming games, namely Donkey Kong. However we wanted to add a layer of gameplay, via AR, on top of the 2D platformer game. For this we got a lot of inspiration from some of the previous projects from the AGI course, for example from <a href="http://tabletopheroesar.com/">Tabletop Heroes</a> (a.k.a. <a href="http://brarwl.com/">BraARwl</a>) and <a href="https://app.weld.io/knyttet/knyttet">Knyttet</a>.`
+
+const technologies = `We chose to deploy this game in AR, as it provides us with novel ways to interact with a familiar video game genre. By using occlusion in AR, we encourage the players to use the environment to their advantage. We use ARCore, since it provides real-time position of the device, light estimation and the ability to anchor objects. 
+<br><br>
+Early on, we decided to have a consistent voxelized aesthetics for the game. It is a style that has become popular once more due to games like Minecraft and the emergence of other indie games.`
+
 new Vue({
   el: '#app',
   data: {
     users: [{
       name: "Sonia Camacho",
       email: "soniach@kth.se",
-      pic: "sonia.jpg"
+      pic: "sonia.jpg",
+      contributions:["Animation and sound","AI King for single-player","Website"]
     }, {
       name: "Julien Rouault",
       email: "rouault@kth.se",
-      pic: "user.png"
+      pic: "user.png",
+      contributions:["","",""]
     }, {
       name: "Pooria Ghavamian",
       email: "pooriag@kth.se",
-      pic: "pooria.jpg"
+      pic: "pooria.jpg",
+      contributions:["Advanced graphics", "Animation", "Modelling"]
     }, {
       name: "Bjarni Gudmundsson",
       email: "brgud@kth.se",
-      pic: "bjarni.jpg"
+      pic: "bjarni.jpg",
+      contributions:["Advanced graphics","Multiplayer","Project management"]
     }, {
       name: "Rafa Lucena",
       email: "rafaella@kth.se",
-      pic: "rafa.jpg"
+      pic: "rafa.jpg",
+      contributions:["Level instantiator","Multiplayer"]
     }, {
       name: "Henrique Furtado",
       email: "hfm@kth.se",
-      pic: "henrique.jpg"
+      pic: "henrique.jpg",
+      contributions:["Gameplay programming","Multiplayer"]
     }],
     challenges: challenges,
-    lessons: lessons
+    lessons: lessons,
+    relatedWork: relatedWork,
+    technologies: technologies
   }
 })
 
