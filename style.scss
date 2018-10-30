@@ -21,6 +21,11 @@ html, body {
       max-width: 1200px;
       margin: auto;
       padding: 20px;
+
+      .text-content{
+        padding-left: 40px;
+        padding-right: 40px;
+      }
     }
 
     .section-title {
@@ -131,6 +136,7 @@ html, body {
         width: 40%;
         height: auto;
         margin-bottom: 20px;
+        border-radius: 50%;
   
         &:hover {
           cursor: pointer;

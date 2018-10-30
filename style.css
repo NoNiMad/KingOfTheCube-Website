@@ -25,6 +25,11 @@ html, body {
   padding: 20px;
 }
 
+#app section .container .text-content {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 #app section .section-title {
   background-color: lightslategrey;
   text-align: center;
@@ -153,6 +158,7 @@ html, body {
   width: 40%;
   height: auto;
   margin-bottom: 20px;
+  border-radius: 50%;
 }
 
 #team .team .user img:hover {
