@@ -18,253 +18,260 @@ html, body {
     width: 100%;
 
     .container {
-      width: 100%;
+      max-width: 1200px;
       margin: auto;
-      padding: 20px 0;
+      padding: 20px;
     }
 
-    .section-title{
-        background-color:lightslategrey;
-        text-align:center;
-        padding: 10px 0 10px 0;
-        margin-bottom: 20px;
-        margin-top: 20px;
+    .section-title {
+      background-color: lightslategrey;
+      text-align: center;
+      padding: 10px 0 10px 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  :not(#slideshow) .container { background-color: rgba(200, 200, 200, 0.8); }
+}
+
+#background {
+  background: url('background.png');
+  background-size: auto 100%;
+  margin-bottom: -20px;
+}
+
+#slideshow {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('filter.png'), url('pics/ff_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-size: 24pt;
+  color: white;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+
+    .gametitle {
+      margin-right: 20px;
+      font-size: 96pt;
+      font-weight: bold;
+      line-height: 86pt;
+      color: #ffbd00;
+  
+      div {
+        text-align: right;
+        font-size: 52pt;
+        line-height: 46pt;
+        padding-right: 4px;
+      }
+    }
+
+    .outlined {
+      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
   }
 }
 
-#slideshow {
-    height: 100%;
+#main-content {
+  .centered {
+    margin: auto;
+    margin-top: 20px;
+
+    img {
+      margin: auto;
+      width: 60%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+#gallery {
+  .pictures {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url('filter.png'), url('pics/ff_1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -2px;
 
-    font-size: 24pt;
-    color: white;
+    img {
+      margin: 2px;
+      align-self: top;
+      width: calc(25% - 4px);
 
-    section {
-        width: 100%;
-        height: 100%;
-    }
-
-    .gametitle {
-        margin-right: 20px;
-        font-size: 96pt;
-        font-weight: bold;
-        line-height: 86pt;
-        color: #ffbd00;
-
-        div {
-            text-align: right;
-            font-size: 52pt;
-            line-height: 46pt;
-            padding-right: 4px;
-        }
-    }
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .outlined {
-            text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-        }
-    }
-}
-
-#main-content{
-    padding: 20px 80px 20px 80px;
-
-    .centered{
-        padding: 30px;
-        margin: auto;
-
-        img{
-            margin: auto;
-            width: 60%;
-            height: auto;
-            display: block;
-        }
-    }
-}
-
-div {
-    .gallery {
+      &:hover {
         cursor: pointer;
-
-        :hover {
-            opacity: 0.7;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
+        opacity: 0.7;
+      }
     }
-
-    .team {
-        img {
-            width: 40%;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-
-        p {
-            text-align: center;
-            margin-bottom: 2px;
-        }
-
-        .email {
-            color: darkslategrey;
-            margin-top: 0px;
-            margin-bottom: 40px;
-        }
-    }
-}
-
-#gallery{
-    //margin: 10px 10px 10px 10px;
+  }
 }
 
 #team {
-    .responsive {
-        padding: 0 2px;
-        float: left;
-        width: 32.5%;
-    }
-}
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -2px;
 
-.responsive {
-    padding: 0 2px;
-    float: left;
-    width: 24.9%;
+    .user {
+      width: 33%;
+      text-align: center;
+      margin-bottom: 30px;
+
+      img {
+        width: 40%;
+        height: auto;
+        margin-bottom: 20px;
+  
+        &:hover {
+          cursor: pointer;
+          opacity: 0.7;
+        }
+      }
+
+      .email {
+        color: darkslategrey;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    .responsive {
-        width: 33.1%;
-        margin: 6px 0;
+  #app section .container { width: 100%; }
+  #gallery .pictures img { width: calc(33% - 4px); }
+
+  #slideshow {
+    font-size: 18pt;
+
+    .gametitle {
+      margin-right: 20px;
+      font-size: 52pt;
+      line-height: 52pt;
+
+      .subtitle {
+        font-size: 36pt;
+        line-height: 32pt;
+        padding-right: 4px;
+      }
     }
+  }
 
-    #slideshow {
-        font-size: 18pt;
-
-        .gametitle {
-            margin-right: 20px;
-            font-size: 52pt;
-            line-height: 52pt;
-
-            .subtitle {
-                font-size: 36pt;
-                line-height: 32pt;
-                padding-right: 4px;
-            }
-        }
-    }
-    
 }
 
 @media only screen and (max-width: 600px) {
-    .responsive {
-        width: 49.8%;
-        margin: 6px 0;
+  #gallery .pictures img { width: calc(50% - 4px); }
+  #team .team .user { width: 50%; }
+
+  #slideshow {
+    font-size: 12pt;
+
+    .gametitle {
+      margin-right: 20px;
+      font-size: 52pt;
+      line-height: 52pt;
+
+      .subtitle {
+        font-size: 36pt;
+        line-height: 32pt;
+        padding-right: 4px;
+      }
     }
-
-    #slideshow {
-        font-size: 12pt;
-
-        .gametitle {
-            margin-right: 20px;
-            font-size: 52pt;
-            line-height: 52pt;
-
-            .subtitle {
-                font-size: 36pt;
-                line-height: 32pt;
-                padding-right: 4px;
-            }
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
+  #gallery .pictures img { width: calc(100% - 4px); }
+  #team .team .user { width: 100%; }
+  #slideshow .container {
+    display: block;
+    text-align: center;
+    
+    .gametitle {
+      margin-bottom: 20px;
+      div {
+        margin-right: 62px;
+      }
     }
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+  }
 }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 /* The Close Button */
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-footer{
-    margin-top: 20px;
-    //display: block;
+footer {
+  margin-top: 20px;
+  //display: block;
 }
