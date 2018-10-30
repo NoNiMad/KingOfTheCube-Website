@@ -100,12 +100,14 @@ html, body {
     justify-content: center;
     margin: 0 -2px;
 
-    img {
+    div {
       margin: 2px;
-      align-self: top;
       width: calc(25% - 4px);
 
-      &:hover {
+      img {
+        width: 100%;
+      }
+      img:hover {
         cursor: pointer;
         opacity: 0.7;
       }
@@ -145,7 +147,7 @@ html, body {
 
 @media only screen and (max-width: 900px) {
   #app section .container { width: 100%; }
-  #gallery .pictures img { width: calc(33% - 4px); }
+  #gallery .pictures div { width: calc(33% - 4px); }
 
   #slideshow {
     font-size: 18pt;
@@ -166,7 +168,7 @@ html, body {
 }
 
 @media only screen and (max-width: 600px) {
-  #gallery .pictures img { width: calc(50% - 4px); }
+  #gallery .pictures div { width: calc(50% - 4px); }
   #team .team .user { width: 50%; }
 
   #slideshow {
@@ -187,7 +189,7 @@ html, body {
 }
 
 @media only screen and (max-width: 500px) {
-  #gallery .pictures img { width: calc(100% - 4px); }
+  #gallery .pictures div { width: calc(100% - 4px); }
   #team .team .user { width: 100%; }
   #slideshow .container {
     display: block;

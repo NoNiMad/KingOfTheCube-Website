@@ -58,7 +58,9 @@
           </div>
 
           <div class="pictures">
-            <img v-for="i in [1, 2, 3, 4, 5, 6, 7, 8]" :src="`pics/kotc${i}.jpg`" :alt="`Picture ${i}`" onclick="showImg(this)">
+            <div v-for="i in [1, 2, 3, 4, 5, 6, 7, 8]"> 
+              <img :src="`pics/kotc${i}.jpg`" :alt="`Picture ${i}`" onclick="showImg(this)">
+            </div>
           </div>
         </div>
       </section>
