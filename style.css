@@ -3,11 +3,19 @@
   src: url(monofonto.ttf);
 }
 
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+}
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: monofonto, Calibri, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16pt;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 200;
 }
 
 #app {
@@ -22,23 +30,31 @@ html, body {
 #app section .container {
   max-width: 1200px;
   margin: auto;
-  padding: 20px;
 }
 
 #app section .container .text-content {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+}
+
+#app section .container .text-content a {
+  color: #8d9e9e;
+  font-weight: 200;
+  text-decoration: none;
 }
 
 #app section .section-title {
-  background-color: lightslategrey;
+  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
+  color: #202024;
+  font-weight: 300;
   padding: 10px 0 10px 0;
   margin-bottom: 40px;
 }
 
 #app :not(#slideshow) .container {
-  background-color: #c8c8c8;
+  background-color: #202024;
 }
 
 #background {
@@ -62,6 +78,7 @@ html, body {
   background: url("filter.png"), url("pics/ff_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: monofonto, Calibri, sans-serif;
   font-size: 24pt;
   color: white;
 }
@@ -108,6 +125,7 @@ html, body {
   width: 60%;
   height: auto;
   display: block;
+  padding-bottom: 40px;
 }
 
 #gallery .pictures {
@@ -120,6 +138,7 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 -2px;
+  padding-bottom: 40px;
 }
 
 #gallery .pictures div {
@@ -151,7 +170,7 @@ html, body {
 #team .team .user {
   width: 33%;
   text-align: center;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 
@@ -160,23 +179,25 @@ html, body {
   height: auto;
   margin-bottom: 20px;
   border-radius: 50%;
-}
-
-#team .team .user img:hover {
-  cursor: pointer;
-  opacity: 0.7;
+  /* &:hover {
+          cursor: pointer;
+          opacity: 0.7;
+        } */
 }
 
 #team .team .user .email {
-  color: darkslategrey;
-  font-weight: normal;
+  color: #8d9e9e;
+  font-weight: 200;
+  text-decoration: none;
 }
 
 #team .team .user .list {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: 200;
+  font-size: 14pt;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media only screen and (max-width: 900px) {
@@ -316,5 +337,10 @@ html, body {
 
 footer {
   margin-top: 20px;
+  background: #1b1b1f;
+}
+
+footer .icon {
+  font-size: 40px;
 }
 /*# sourceMappingURL=style.css.map */

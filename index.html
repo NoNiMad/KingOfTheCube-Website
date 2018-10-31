@@ -109,7 +109,7 @@
 
           <div class="team">
             <div class="user" v-for="user in users">
-              <img :src="`pics/${user.pic}`" alt="" width="400" height="300" onclick="showImg(this)">
+              <img :src="`pics/${user.pic}`" alt="" width="400" height="300">
               <div>
                 {{ user.name }}
                 <br>
@@ -126,12 +126,12 @@
     </div>
 
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-32">
+    <footer class="w3-center w3-padding-32">
       <div id="back-top">
         <a href="#top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
       </div>
-      <div class="w3-xlarge w3-section">
-        <a href="https://github.com/elBjarnacho/KingOfTheCube"><i class="fa fa-github w3-hover-opacity"></i></a>
+      <div class="w3-section">
+        <a class="icon" href="https://github.com/elBjarnacho/KingOfTheCube"><i class="fa fa-github w3-hover-opacity"></i></a>
       </div>
       <p>&copy; King of the Cube 2018</p>
     </footer>

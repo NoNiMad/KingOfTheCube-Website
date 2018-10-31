@@ -3,11 +3,20 @@
   src: url(monofonto.ttf);
 }
 
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+}
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: monofonto, Calibri, sans-serif;
+  // font-family: monofonto, Calibri, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16pt;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 200;
 }
 
 #app {
@@ -20,23 +29,35 @@ html, body {
     .container {
       max-width: 1200px;
       margin: auto;
-      padding: 20px;
+      //padding: 20px;
 
       .text-content{
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 40px;
+
+        a {
+          color: rgb(141, 158, 158);
+          font-weight: 200;
+          text-decoration:none;
+        }
       }
     }
 
     .section-title {
-      background-color: lightslategrey;
+      background-color: rgba(255, 255, 255, 0.70);
       text-align: center;
+      color: rgb(32, 32, 36);
+      font-weight: 300;
       padding: 10px 0 10px 0;
       margin-bottom: 40px;
     }
   }
 
-  :not(#slideshow) .container { background-color: rgba(200, 200, 200, 1); }
+  :not(#slideshow) .container { 
+    //background-color: rgba(200, 200, 200, 1); 
+    background-color: rgb(32, 32, 36); 
+  }
 }
 
 #background {
@@ -54,6 +75,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 
+  font-family: monofonto, Calibri, sans-serif;
   font-size: 24pt;
   color: white;
 
@@ -94,6 +116,7 @@ html, body {
       width: 60%;
       height: auto;
       display: block;
+      padding-bottom: 40px;
     }
   }
 }
@@ -104,6 +127,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 -2px;
+    padding-bottom: 40px;
 
     div {
       margin: 2px;
@@ -130,7 +154,7 @@ html, body {
     .user {
       width: 33%;
       text-align: center;
-      font-weight: bold;
+      font-weight: 400;
       margin-bottom: 30px;
 
       img {
@@ -139,22 +163,25 @@ html, body {
         margin-bottom: 20px;
         border-radius: 50%;
   
-        &:hover {
+        /* &:hover {
           cursor: pointer;
           opacity: 0.7;
-        }
+        } */
       }
 
       .email {
-        color: darkslategrey;
-        font-weight: normal;
+        color: rgb(141, 158, 158);
+        font-weight: 200;
+        text-decoration:none;
       }
 
       .list {
         text-align: center;
         margin-top: 0;
         margin-bottom: 0;
-        font-weight: normal;
+        font-weight: 200;
+        font-size: 14pt;
+        color: rgba(255, 255, 255, 0.70);
       }
     }
   }
@@ -290,5 +317,9 @@ html, body {
 
 footer {
   margin-top: 20px;
+  background: rgb(27, 27, 31);
   //display: block;
+  .icon{
+    font-size: 40px;
+  }
 }
