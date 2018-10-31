@@ -25,8 +25,8 @@ new Vue({
     }, {
       name: "JULIEN ROUAULT",
       email: "rouault@kth.se",
-      pic: "user.png",
-      contributions:["","",""]
+      pic: "julien.jpg",
+      contributions:["Augmented reality","Mobile controls","Website"]
     }, {
       name: "POORIA GHAVAMIAN",
       email: "pooriag@kth.se",
