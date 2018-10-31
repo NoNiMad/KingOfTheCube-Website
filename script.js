@@ -18,32 +18,32 @@ new Vue({
   el: '#app',
   data: {
     users: [{
-      name: "Sonia Camacho",
+      name: "SONIA CAMACHO",
       email: "soniach@kth.se",
       pic: "sonia.jpg",
       contributions:["Animation and sound","AI King for single-player","Website"]
     }, {
-      name: "Julien Rouault",
+      name: "JULIEN ROUAULT",
       email: "rouault@kth.se",
       pic: "user.png",
       contributions:["","",""]
     }, {
-      name: "Pooria Ghavamian",
+      name: "POORIA GHAVAMIAN",
       email: "pooriag@kth.se",
       pic: "pooria.jpg",
       contributions:["Advanced graphics", "Animation", "Modelling"]
     }, {
-      name: "Bjarni Gudmundsson",
+      name: "BJARNI GUDMUNDSSON",
       email: "brgud@kth.se",
       pic: "bjarni.jpg",
       contributions:["Advanced graphics","Multiplayer","Project management"]
     }, {
-      name: "Rafa Lucena",
+      name: "RAFA LUCENA",
       email: "rafaella@kth.se",
       pic: "rafa.jpg",
       contributions:["Level instantiator","Multiplayer"]
     }, {
-      name: "Henrique Furtado",
+      name: "HENRIQUE FURTADO",
       email: "hfm@kth.se",
       pic: "henrique.jpg",
       contributions:["Gameplay programming","Multiplayer"]
