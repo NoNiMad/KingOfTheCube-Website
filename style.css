@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200|Source+Sans+Pro:200,300");
 @font-face {
   font-family: monofonto;
   src: url(monofonto.ttf);
@@ -29,8 +29,8 @@ html, body {
 }
 
 #app section .container .text-content {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 40px;
   text-align: justify;
   text-justify: inter-word;
@@ -55,11 +55,12 @@ html, body {
 
 #app section .container .div-2 div {
   margin: 2px;
-  width: calc(25% - 4px);
+  width: calc(33% - 4px);
 }
 
 #app section .container .div-2 div img {
   width: 100%;
+  padding-bottom: 20px;
 }
 
 #app section .section-title {
@@ -144,6 +145,16 @@ html, body {
   height: auto;
   display: block;
   padding-bottom: 40px;
+}
+
+#main-content .text-content {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18pt;
+  font-weight: 200;
+  padding-top: 50px;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  background: #746139;
 }
 
 #gallery .pictures {
@@ -278,6 +289,9 @@ html, body {
   }
   #slideshow .container .gametitle div {
     margin-right: 62px;
+  }
+  .text-content {
+    font-size: 12pt;
   }
 }
 

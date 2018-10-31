@@ -31,12 +31,12 @@ new Vue({
       name: "POORIA GHAVAMIAN",
       email: "pooriag@kth.se",
       pic: "pooria.jpg",
-      contributions:["Advanced graphics", "Animation", "Modelling"]
+      contributions:["Graphics", "Animation", "Modelling"]
     }, {
       name: "BJARNI GUDMUNDSSON",
       email: "brgud@kth.se",
       pic: "bjarni.jpg",
-      contributions:["Advanced graphics","Multiplayer","Project management"]
+      contributions:["Graphics","Multiplayer","Project management"]
     }, {
       name: "RAFA LUCENA",
       email: "rafaella@kth.se",
