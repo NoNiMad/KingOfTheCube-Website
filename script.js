@@ -48,6 +48,43 @@ new Vue({
       pic: "henrique.jpg",
       contributions:["Gameplay programming","Multiplayer"]
     }],
+    images: [{
+      name: "1",
+      description: "King of the Cube at ForskarFredag"
+    }, {
+      name: "2",
+      description: "King of the Cube at ForskarFredag"
+    }, {
+      name: "3",
+      description: "King of the Cube at ForskarFredag"
+    }, {
+      name: "4",
+      description: "King of the Cube at ForskarFredag"
+    }, {
+      name: "5",
+      description: "King of the Cube at ForskarFredag"
+    }, {
+      name: "6",
+      description: "King of the Cube at ForskarFredag"
+    }, {
+      name: "7",
+      description: "King of the Cube at Future Friday"
+    }, {
+      name: "8",
+      description: "Demo for students at KTH"
+    }, {
+      name: "9",
+      description: "Demo for students at KTH"
+    }, {
+      name: "10",
+      description: "Demo for students at KTH"
+    }, {
+      name: "11",
+      description: "Exhibition at Tekniska Museet"
+    }, {
+      name: "12",
+      description: "Exhibition at Tekniska Museet"
+    }],
     challenges: challenges,
     lessons: lessons,
     relatedWork: relatedWork,
