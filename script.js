@@ -85,7 +85,7 @@ new Vue({
       name: "10",
       description: "Demo for students at KTH"
     }, {
-      name: "11",
+      name: "13",
       description: "Exhibition at Tekniska Museet"
     }, {
       name: "12",

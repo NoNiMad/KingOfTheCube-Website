@@ -64,7 +64,7 @@ html, body {
 }
 
 #app section .section-title {
-  background-color: #e0a72a;
+  background-color: #db962d;
   text-align: center;
   color: #202024;
   font-family: monofonto, Calibri, sans-serif;
@@ -159,7 +159,7 @@ html, body {
 }
 
 #tabs {
-  background-color: #e0a72a;
+  background-color: #db962d;
 }
 
 .tabs {
@@ -191,7 +191,7 @@ html, body {
 }
 
 .dropbtn {
-  background-color: #e0a72a;
+  background-color: #db962d;
   color: white;
   padding: 16px;
   font-size: 14px;
@@ -202,7 +202,7 @@ html, body {
 .dropdown {
   display: none;
   position: relative;
-  background-color: #e0a72a;
+  background-color: #db962d;
   width: 100%;
 }
 
@@ -462,7 +462,7 @@ footer .icon {
 }
 
 footer .top-button {
-  background: #e0a72a;
+  background: #db962d;
   font-family: monofonto, Calibri, sans-serif;
   color: #232327;
 }
