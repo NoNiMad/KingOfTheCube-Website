@@ -31,6 +31,22 @@
     </section>
     <div id="background">
       <section id="main-content">
+        <div id="tabs">
+          <div class="tabs-left">
+            <div class="tabs" v-for="tab in tabs">
+                <a :onclick="`scrollToElement('#${tab.id}')`">{{tab.label}}</a>
+            </div>
+          </div>
+          <div class="tabs tabs-right">
+              <a href="https://github.com/elBjarnacho/KingOfTheCube"><i class="fa fa-github" style="font-size: 22pt"></i></a>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn" ><i class="fa fa-bars" style="font-size: 22pt"></i></button>
+              <div class="dropdown-content">
+                <a v-for="tab in tabs" :onclick="`scrollToElement('#${tab.id}')`">{{tab.label}}</a>
+              </div>
+            </div>
+        </div>
         <div class="container">
           <img src="pics/menu.png" width="100%">
           <!-- <div class="section-title">
@@ -45,13 +61,17 @@
               <p style="font-size: 14pt">This project was developed from September to early November 2018 as part of the DH2413 Advanced Graphics and
                   Interaction course at KTH.</p>
           </div>
+          <div id="demo" class="section-title">
+            DEMO
+          </div>
           <div class="centered">
             <!-- <img src="pics/video-player.png" width="400" height="300" /> -->
             <iframe src="https://player.vimeo.com/video/299459802?autoplay=0&title=0&byline=0&portrait=0" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div><br></div>
           </div>
         </div>
       </section>
-      <section>
+      <section id="technologies">
         <div class="container">
           <div class="section-title">
               TECHNOLOGIES USED
@@ -67,7 +87,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="challenges">
         <div class="container">
             <div class="section-title">
                 CHALLENGES &amp OBSTACLES 
@@ -75,15 +95,15 @@
             <div v-html="challenges" class="text-content"></div>
         </div>
       </section>
-      <section>
+      <section id="related-work">
         <div class="container">
           <div class="section-title">
               RELATED WORK
           </div>
           <div v-html="relatedWork" class="text-content"></div>
         </div>
-        </section>
-      <section>
+      </section>
+      <section id="lessons">
         <div class="container">
           <div class="section-title">
               LESSONS LEARNED
@@ -139,7 +159,7 @@
     <!-- Footer -->
     <footer class="w3-center w3-padding-32">
       <div id="back-top">
-        <a href="#top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <a href="#top" class="w3-button top-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
       </div>
       <div class="w3-section">
         <a class="icon" href="https://github.com/elBjarnacho/KingOfTheCube"><i class="fa fa-github w3-hover-opacity"></i></a>
