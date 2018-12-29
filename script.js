@@ -20,31 +20,37 @@ new Vue({
     users: [{
       name: "SONIA CAMACHO",
       email: "soniach@kth.se",
+      linkedin: "https://www.linkedin.com/in/sonia-ch/",
       pic: "sonia.jpg",
       contributions:["Animation and sound","AI King for single-player","Website"]
     }, {
       name: "JULIEN ROUAULT",
       email: "rouault@kth.se",
+      linkedin: "https://www.linkedin.com/in/julien-rouault/",
       pic: "julien.jpg",
       contributions:["Augmented reality","Mobile controls","Website"]
     }, {
       name: "POORIA GHAVAMIAN",
       email: "pooriag@kth.se",
+      linkedin: "https://www.linkedin.com/in/pooria-ghavamian/",
       pic: "pooria.jpg",
       contributions:["Graphics", "Animation", "Modelling"]
     }, {
       name: "BJARNI GUDMUNDSSON",
       email: "brgud@kth.se",
+      linkedin: "https://www.linkedin.com/in/bjarni-ragnar-gudmundsson-17a12b100/",
       pic: "bjarni.jpg",
       contributions:["Graphics","Multiplayer","Project management"]
     }, {
       name: "RAFA LUCENA",
       email: "rafaella@kth.se",
+      linkedin: "https://www.linkedin.com/in/rlaraujo/",
       pic: "rafa.jpg",
       contributions:["Level instantiator","Multiplayer"]
     }, {
       name: "HENRIQUE FURTADO",
       email: "hfm@kth.se",
+      linkedin: "https://www.linkedin.com/in/henriquefur/",
       pic: "henrique.jpg",
       contributions:["Gameplay programming","Multiplayer"]
     }],
