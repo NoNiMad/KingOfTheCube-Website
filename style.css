@@ -64,7 +64,7 @@ html, body {
 }
 
 #app section .section-title {
-  background-color: #ffbd00;
+  background-color: #e0a72a;
   text-align: center;
   color: #202024;
   font-family: monofonto, Calibri, sans-serif;
@@ -121,7 +121,7 @@ html, body {
   font-size: 96pt;
   font-weight: bold;
   line-height: 86pt;
-  color: #ffbd00;
+  color: #fac30c;
 }
 
 #slideshow .container .gametitle div {
@@ -159,7 +159,7 @@ html, body {
 }
 
 #tabs {
-  background-color: #ffbd00;
+  background-color: #e0a72a;
 }
 
 .tabs {
@@ -191,7 +191,7 @@ html, body {
 }
 
 .dropbtn {
-  background-color: #ffbd00;
+  background-color: #e0a72a;
   color: white;
   padding: 16px;
   font-size: 14px;
@@ -202,7 +202,7 @@ html, body {
 .dropdown {
   display: none;
   position: relative;
-  background-color: #ffbd00;
+  background-color: #e0a72a;
   width: 100%;
 }
 
@@ -462,7 +462,7 @@ footer .icon {
 }
 
 footer .top-button {
-  background: #ffbd00;
+  background: #e0a72a;
   font-family: monofonto, Calibri, sans-serif;
   color: #232327;
 }
