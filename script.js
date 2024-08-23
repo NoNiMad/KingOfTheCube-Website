@@ -24,10 +24,10 @@ new Vue({
       pic: "sonia.jpg",
       contributions:["Animation and sound","AI King for single-player","Website"]
     }, {
-      name: "JULIEN ROUAULT",
+      name: "JULIE ROUAULT",
       email: "rouault@kth.se",
-      linkedin: "https://www.linkedin.com/in/julien-rouault/",
-      pic: "julien.jpg",
+      linkedin: "https://www.linkedin.com/in/julie-rouault2/",
+      pic: "julie.jpg",
       contributions:["Augmented reality","Mobile controls","Website"]
     }, {
       name: "POORIA GHAVAMIAN",
